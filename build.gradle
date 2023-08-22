@@ -15,9 +15,14 @@ repositories {
 	mavenCentral()
 }
 
+ext {
+	mysql_version = "8.0.28"
+}
+
 dependencies {
 	implementation "org.springframework.boot:spring-boot-starter"
 	implementation "org.springframework.boot:spring-boot-starter-web"
+	implementation "mysql:mysql-connector-java:$mysql_version"
 
 	compileOnly "org.projectlombok:lombok"
 
